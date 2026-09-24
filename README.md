@@ -12,7 +12,7 @@ public_html/          ← ارفع محتويات هذا المجلد إلى pub
 └── assets/
     ├── css/style.css
     ├── js/main.js
-    └── img/ (favicon.svg, og.svg, og.png)
+    └── img/ (logo.jpg, favicon.png, apple-touch-icon.png, og.png)
 store                 ← CSS مخصص لمتجر سلة (منفصل عن الموقع)
 ```
 
@@ -22,7 +22,8 @@ store                 ← CSS مخصص لمتجر سلة (منفصل عن الم
 3. بعد التأكد من تفعيل SSL، فعّل أسطر تحويل HTTPS في `.htaccess`.
 
 ## التعديل
-- بيانات التواصل (واتساب/تيليجرام/البريد) داخل `index.html`.
+- بيانات التواصل (واتساب/تيليجرام/X/البريد) داخل `index.html`.
+- الشعار: استبدل `assets/img/logo.jpg` بصورة مربعة بنفس الاسم.
 - الألوان في أعلى `assets/css/style.css` ضمن `:root`.
 - الكلمات المتحركة في العنوان: الخاصية `data-words` في `index.html`.
 
