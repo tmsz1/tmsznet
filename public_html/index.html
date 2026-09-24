@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TMSZ | حلول تقنية متكاملة</title>
+  <meta name="description" content="TMSZ — خدمات تقنية احترافية: تصميم وتطوير المواقع والمتاجر الإلكترونية، الدعم الفني، الاستضافة والنطاقات، الحماية والأمن السيبراني، وحلول الاشتراكات الرقمية.">
+  <meta name="keywords" content="TMSZ, خدمات تقنية, تصميم مواقع, متاجر سلة, دعم فني, استضافة, أمن سيبراني, جدة, السعودية">
+  <meta name="theme-color" content="#05090f">
+  <link rel="canonical" href="https://tmsz.net/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:title" content="TMSZ | حلول تقنية متكاملة">
+  <meta property="og:description" content="نبني حضورك الرقمي بقوة وأناقة — مواقع، متاجر، دعم فني، استضافة وحماية.">
+  <meta property="og:url" content="https://tmsz.net/">
+  <meta property="og:image" content="https://tmsz.net/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@_TALEBM_">
+
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TMSZ",
+    "url": "https://tmsz.net/",
+    "logo": "https://tmsz.net/assets/img/logo.jpg",
+    "email": "x@tmsz.net",
+    "telephone": "+966590084814",
+    "areaServed": "SA",
+    "address": { "@type": "PostalAddress", "addressLocality": "جدة", "addressCountry": "SA" },
+    "sameAs": ["https://t.me/TMSZ1", "https://x.com/_TALEBM_"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Intro loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <img class="loader__img" src="assets/img/logo.jpg" alt="" width="120" height="120">
+    <div class="loader__logo">TMSZ</div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <!-- Background layers -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="TMSZ الرئيسية">
+        <span class="brand__mark"><img src="assets/img/logo.jpg" alt="" width="40" height="40"></span>
+        <span class="brand__text">TMSZ</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+        <a href="#services">الخدمات</a>
+        <a href="#why">لماذا نحن</a>
+        <a href="#process">آلية العمل</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+
+      <a href="https://wa.me/966590084814" class="btn btn--sm btn--glow header__cta" target="_blank" rel="noopener">ابدأ مشروعك</a>
+
+      <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="pill reveal"><i class="dot"></i> متاحون لاستقبال مشاريع جديدة</span>
+          <h1 class="hero__title reveal">
+            نصنع لك
+            <span class="gradient-text typer" id="typer" data-words='["حضوراً رقمياً أسطورياً","مواقع تبهر عملاءك","متاجر تبيع أكثر","حماية لا تُخترق"]'>حضوراً رقمياً أسطورياً</span>
+          </h1>
+          <p class="hero__lead reveal">
+            TMSZ شريكك التقني من الفكرة حتى الإطلاق — تصميم وتطوير، دعم فني، استضافة وحماية، بمعايير احترافية وسرعة تنفيذ تليق بطموحك.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#contact" class="btn btn--glow btn--lg magnetic">
+              اطلب خدمتك الآن
+              <svg class="ico" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+            </a>
+            <a href="#services" class="btn btn--ghost btn--lg">استكشف الخدمات</a>
+          </div>
+          <ul class="hero__trust reveal">
+            <li><svg class="ico" viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg> تنفيذ سريع</li>
+            <li><svg class="ico" viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg> أسعار واضحة</li>
+            <li><svg class="ico" viewBox="0 0 24 24"><path d="M5 12l4 4L19 6"/></svg> دعم بعد التسليم</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="orbit">
+            <div class="orbit__ring orbit__ring--1"><span class="orbit__node"></span></div>
+            <div class="orbit__ring orbit__ring--2"><span class="orbit__node"></span></div>
+            <div class="orbit__ring orbit__ring--3"><span class="orbit__node"></span></div>
+            <div class="orbit__core">
+              <img src="assets/img/logo.jpg" alt="شعار TMSZ" width="400" height="400">
+            </div>
+          </div>
+          <div class="float-card float-card--a tilt">
+            <span class="float-card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></span>
+            <div><b>حماية متقدمة</b><small>SSL · جدار ناري</small></div>
+          </div>
+          <div class="float-card float-card--b tilt">
+            <span class="float-card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
+            <div><b>أداء خارق</b><small>تحميل فائق السرعة</small></div>
+          </div>
+          <div class="float-card float-card--c tilt">
+            <span class="float-card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4"/></svg></span>
+            <div><b>تصميم متجاوب</b><small>كل الشاشات</small></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#services" class="scroll-hint" aria-label="انتقل للخدمات"><span></span></a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>تصميم مواقع</span><span>✦</span><span>متاجر سلة وزد</span><span>✦</span><span>دعم فني</span><span>✦</span><span>استضافة ونطاقات</span><span>✦</span><span>أمن سيبراني</span><span>✦</span><span>بريد احترافي</span><span>✦</span><span>اشتراكات رقمية</span><span>✦</span><span>هوية بصرية</span><span>✦</span>
+        <span>تصميم مواقع</span><span>✦</span><span>متاجر سلة وزد</span><span>✦</span><span>دعم فني</span><span>✦</span><span>استضافة ونطاقات</span><span>✦</span><span>أمن سيبراني</span><span>✦</span><span>بريد احترافي</span><span>✦</span><span>اشتراكات رقمية</span><span>✦</span><span>هوية بصرية</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">خدماتنا</span>
+          <h2 class="section__title">كل ما تحتاجه تقنياً <span class="gradient-text">في مكان واحد</span></h2>
+          <p class="section__lead">حلول مصممة بعناية لتنقل مشروعك إلى المستوى التالي.</p>
+        </header>
+
+        <div class="services">
+          <article class="card tilt reveal">
+            <div class="card__glow"></div>
+            <span class="card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></span>
+            <h3>تصميم وتطوير المواقع</h3>
+            <p>مواقع تعريفية وصفحات هبوط سريعة ومتجاوبة، بتصميم عصري يعكس هويتك ويحوّل الزوار إلى عملاء.</p>
+            <ul class="card__tags"><li>صفحات هبوط</li><li>مواقع شركات</li><li>SEO</li></ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__glow"></div>
+            <span class="card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11h11L21 8H6.2M9 20h.01M18 20h.01"/></svg></span>
+            <h3>المتاجر الإلكترونية</h3>
+            <p>إطلاق وتخصيص متاجر سلة وزد: ثيمات مخصصة، CSS احترافي، ربط الدفع والشحن، وتهيئة كاملة للبيع.</p>
+            <ul class="card__tags"><li>سلة</li><li>زد</li><li>تخصيص الثيم</li></ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__glow"></div>
+            <span class="card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14h3v5H4zM17 14h3v5h-3z"/></svg></span>
+            <h3>الدعم الفني</h3>
+            <p>حل المشكلات التقنية عن بُعد، إعداد الأجهزة والبرامج، واستجابة سريعة عندما تحتاجنا.</p>
+            <ul class="card__tags"><li>عن بُعد</li><li>إعداد أنظمة</li><li>صيانة</li></ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__glow"></div>
+            <span class="card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M4 5h16v5H4zM4 14h16v5H4zM8 7.5h.01M8 16.5h.01"/></svg></span>
+            <h3>الاستضافة والنطاقات</h3>
+            <p>حجز النطاقات، إعداد الاستضافة وDNS، شهادات SSL، ونقل المواقع بدون توقف.</p>
+            <ul class="card__tags"><li>DNS</li><li>SSL</li><li>نقل مواقع</li></ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__glow"></div>
+            <span class="card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <h3>الحماية والأمن السيبراني</h3>
+            <p>تأمين المواقع والحسابات، فحص الثغرات، النسخ الاحتياطي، واستعادة الحسابات المخترقة.</p>
+            <ul class="card__tags"><li>فحص ثغرات</li><li>نسخ احتياطي</li><li>تأمين حسابات</li></ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__glow"></div>
+            <span class="card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M15 7a4 4 0 1 1-3.9 5H3v3h3v3h3v-3h2.1A4 4 0 0 1 15 7zM16 11h.01"/></svg></span>
+            <h3>الاشتراكات والتفعيلات</h3>
+            <p>أكواد تفعيل واشتراكات رقمية أصلية لأشهر البرامج والخدمات، بتسليم سريع وضمان.</p>
+            <ul class="card__tags"><li>أكواد تفعيل</li><li>اشتراكات</li><li>تسليم فوري</li></ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__glow"></div>
+            <span class="card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+            <h3>البريد الاحترافي</h3>
+            <p>بريد إلكتروني باسم نطاقك، إعداد Google Workspace وMicrosoft 365 وربطه بأجهزتك.</p>
+            <ul class="card__tags"><li>Workspace</li><li>Microsoft 365</li></ul>
+          </article>
+
+          <article class="card tilt reveal">
+            <div class="card__glow"></div>
+            <span class="card__ico"><svg class="ico" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1 0 1.5-.8 1.5-1.5 0-.9-.7-1.2-.7-2 0-.8.6-1.5 1.5-1.5H17a4 4 0 0 0 4-4c0-5-4-9-9-9z"/><path d="M7.5 11h.01M10 7.5h.01M14.5 7.5h.01"/></svg></span>
+            <h3>الهوية والتصميم</h3>
+            <p>شعارات، هويات بصرية، وتصاميم سوشيال ميديا تمنح علامتك حضوراً لا يُنسى.</p>
+            <ul class="card__tags"><li>شعار</li><li>هوية</li><li>سوشيال</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section section--alt" id="why">
+      <div class="container why">
+        <div class="why__text reveal">
+          <span class="eyebrow">لماذا TMSZ</span>
+          <h2 class="section__title">لسنا مجرد مزوّد خدمة، <span class="gradient-text">نحن فريقك التقني</span></h2>
+          <p class="section__lead">نؤمن أن التقنية يجب أن تكون بسيطة لك وقوية لعملائك. لذلك نهتم بالتفاصيل، ونلتزم بالمواعيد، ونبقى معك بعد التسليم.</p>
+          <a href="#contact" class="btn btn--glow">تحدث معنا مجاناً</a>
+        </div>
+
+        <div class="why__grid">
+          <div class="feature reveal">
+            <span class="feature__num">01</span>
+            <h3>سرعة التنفيذ</h3>
+            <p>جداول زمنية واضحة وتسليم في الموعد دون تنازل عن الجودة.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__num">02</span>
+            <h3>جودة احترافية</h3>
+            <p>أفضل الممارسات في الأداء، الأمان، وتجربة المستخدم.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__num">03</span>
+            <h3>شفافية كاملة</h3>
+            <p>أسعار واضحة قبل البدء، وتحديثات مستمرة طوال المشروع.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__num">04</span>
+            <h3>دعم مستمر</h3>
+            <p>لا ننتهي عند التسليم — نحن معك للتطوير والصيانة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">آلية العمل</span>
+          <h2 class="section__title">من الفكرة إلى <span class="gradient-text">الإطلاق</span> في 4 خطوات</h2>
+        </header>
+
+        <ol class="process">
+          <li class="step reveal">
+            <span class="step__dot"><svg class="ico" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-4.5A8 8 0 1 1 21 12z"/></svg></span>
+            <h3>تواصل</h3>
+            <p>أخبرنا بفكرتك واحتياجك عبر واتساب أو تيليجرام.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot"><svg class="ico" viewBox="0 0 24 24"><path d="M9 4h6l1 3h4v13H4V7h4zM9 13h6M9 16h4"/></svg></span>
+            <h3>تخطيط</h3>
+            <p>نحلل المتطلبات ونقدم لك عرضاً واضحاً بالسعر والمدة.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot"><svg class="ico" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span>
+            <h3>تنفيذ</h3>
+            <p>نبني وننفذ بدقة، مع مشاركتك في كل مرحلة للمراجعة.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot"><svg class="ico" viewBox="0 0 24 24"><path d="M5 19c1-4 3-7 7-9M14 4c3 0 6 3 6 6-2 4-6 7-10 8l-4-4c1-4 4-8 8-10zM15 9h.01"/></svg></span>
+            <h3>إطلاق ودعم</h3>
+            <p>نطلق مشروعك ونبقى معك للمتابعة والتطوير.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container faq-wrap">
+        <header class="section__head reveal">
+          <span class="eyebrow">الأسئلة الشائعة</span>
+          <h2 class="section__title">عندك <span class="gradient-text">سؤال؟</span></h2>
+        </header>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary>كم تستغرق مدة تنفيذ الموقع؟</summary>
+            <p>تختلف حسب حجم المشروع؛ صفحات الهبوط غالباً خلال أيام قليلة، والمواقع والمتاجر الأكبر نحدد مدتها بوضوح في العرض قبل البدء.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>هل تعملون على متاجر سلة وزد؟</summary>
+            <p>نعم، نقوم بإعداد المتاجر وتخصيص الثيمات وكتابة CSS مخصص، وتهيئة الدفع والشحن والمنتجات.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>كيف تتم عملية الدفع؟</summary>
+            <p>نتفق على السعر مسبقاً، ويمكن تقسيم الدفع على مراحل حسب طبيعة المشروع.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>هل يوجد دعم بعد التسليم؟</summary>
+            <p>بالتأكيد، نقدم فترة دعم بعد التسليم، مع إمكانية الاشتراك في باقات صيانة شهرية.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>هل تقدمون خدماتكم خارج جدة؟</summary>
+            <p>نعم، أغلب خدماتنا تتم عن بُعد ونخدم العملاء في جميع مناطق المملكة والخليج.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__beam" aria-hidden="true"></div>
+          <span class="eyebrow">جاهز للانطلاق؟</span>
+          <h2 class="cta__title">لنصنع شيئاً <span class="gradient-text">أسطورياً</span> معاً</h2>
+          <p class="cta__lead">راسلنا الآن واحصل على استشارة مجانية وعرض سعر خلال وقت قصير.</p>
+
+          <div class="contact-grid">
+            <a class="contact-card tilt" href="https://wa.me/966590084814" target="_blank" rel="noopener">
+              <span class="contact-card__ico contact-card__ico--wa">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.6.9 1-3.5-.2-.4C3 15.8 2.5 14 2.5 12.2 2.5 6.9 6.8 2.6 12 2.6s9.5 4.3 9.5 9.6-4.3 9.6-9.5 9.6zM12 .8C5.8.8.8 5.9.8 12.2c0 2 .5 3.9 1.5 5.6L.7 23.5l5.8-1.5c1.7.9 3.5 1.4 5.5 1.4 6.2 0 11.2-5.1 11.2-11.3S18.2.8 12 .8z"/></svg>
+              </span>
+              <span class="contact-card__label">واتساب</span>
+              <span class="contact-card__value" dir="ltr">+966 59 008 4814</span>
+            </a>
+            <a class="contact-card tilt" href="https://t.me/TMSZ1" target="_blank" rel="noopener">
+              <span class="contact-card__ico contact-card__ico--tg">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.7 19.6c-.2 1-.9 1.3-1.7.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.6 13.3 1.9 11.8c-1-.3-1-1 .2-1.5L20.6 3.2c.9-.3 1.6.2 1.3 1.1z"/></svg>
+              </span>
+              <span class="contact-card__label">تيليجرام</span>
+              <span class="contact-card__value" dir="ltr">@TMSZ1</span>
+            </a>
+            <a class="contact-card tilt" href="https://x.com/_TALEBM_" target="_blank" rel="noopener">
+              <span class="contact-card__ico contact-card__ico--x">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2.8 2h6.4l4.4 5.9zm-1.1 18.1h1.7L7.3 3.8H5.5z"/></svg>
+              </span>
+              <span class="contact-card__label">منصة X</span>
+              <span class="contact-card__value" dir="ltr">@_TALEBM_</span>
+            </a>
+            <a class="contact-card tilt" href="mailto:x@tmsz.net">
+              <span class="contact-card__ico contact-card__ico--mail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              </span>
+              <span class="contact-card__label">البريد</span>
+              <span class="contact-card__value" dir="ltr">x@tmsz.net</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark"><img src="assets/img/logo.jpg" alt="" width="40" height="40"></span>
+        <span class="brand__text">TMSZ</span>
+      </a>
+      <p class="footer__copy">© <span id="year">2026</span> TMSZ — جميع الحقوق محفوظة. صُنع بشغف في المملكة العربية السعودية.</p>
+      <div class="footer__social">
+        <a href="https://wa.me/966590084814" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .8C5.8.8.8 5.9.8 12.2c0 2 .5 3.9 1.5 5.6L.7 23.5l5.8-1.5c1.7.9 3.5 1.4 5.5 1.4 6.2 0 11.2-5.1 11.2-11.3S18.2.8 12 .8z"/></svg></a>
+        <a href="https://t.me/TMSZ1" target="_blank" rel="noopener" aria-label="تيليجرام"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.7 19.6c-.2 1-.9 1.3-1.7.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.6 13.3 1.9 11.8c-1-.3-1-1 .2-1.5L20.6 3.2c.9-.3 1.6.2 1.3 1.1z"/></svg></a>
+        <a href="https://x.com/_TALEBM_" target="_blank" rel="noopener" aria-label="حساب X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2.8 2h6.4l4.4 5.9zm-1.1 18.1h1.7L7.3 3.8H5.5z"/></svg></a>
+        <a href="mailto:x@tmsz.net" aria-label="البريد"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/966590084814" class="fab" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.6.9 1-3.5-.2-.4C3 15.8 2.5 14 2.5 12.2 2.5 6.9 6.8 2.6 12 2.6s9.5 4.3 9.5 9.6-4.3 9.6-9.5 9.6zM12 .8C5.8.8.8 5.9.8 12.2c0 2 .5 3.9 1.5 5.6L.7 23.5l5.8-1.5c1.7.9 3.5 1.4 5.5 1.4 6.2 0 11.2-5.1 11.2-11.3S18.2.8 12 .8z"/></svg>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
