@@ -19,7 +19,7 @@
   --radius-sm: 14px;
   --shadow-glow: 0 0 0 1px rgba(34, 229, 212, .25), 0 10px 40px -10px rgba(34, 229, 212, .45);
   --ease: cubic-bezier(.2, .8, .2, 1);
-  --font: "IBM Plex Sans Arabic", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  --font: "Readex Pro", system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
   --font-latin: "Space Grotesk", var(--font);
 }
 
