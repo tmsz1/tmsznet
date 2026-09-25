@@ -1,0 +1,11 @@
+{
+  "name": "منصة أثر للتبرع بالأثاث والملابس",
+  "short_name": "أثر",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffdf8",
+  "theme_color": "#0f766e",
+  "icons": [{ "src": "logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

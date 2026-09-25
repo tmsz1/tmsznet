@@ -1,0 +1,14 @@
+{
+  "name": "athar-charity-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "منصة خيرية لاستقبال التبرعات من الأثاث والملابس مع لوحة تحكم ونظام تتبع وإشعارات",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

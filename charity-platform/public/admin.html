@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>لوحة التحكم | منصة أثر</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin">
+
+  <!-- تسجيل الدخول -->
+  <main id="login-view" class="login">
+    <form class="form login__card" id="login-form">
+      <div class="logo" style="justify-content:center"><span class="logo__mark">أ</span><span class="logo__text">منصة <strong>أثر</strong></span></div>
+      <h1 class="center">لوحة التحكم</h1>
+      <label>كلمة المرور<input type="password" name="password" required autocomplete="current-password"></label>
+      <p class="form__error" id="login-error" role="alert"></p>
+      <button class="btn btn--primary btn--block">دخول</button>
+    </form>
+  </main>
+
+  <!-- اللوحة -->
+  <div id="app-view" hidden>
+    <header class="header">
+      <div class="container-wide header__inner">
+        <a href="/" class="logo" target="_blank"><span class="logo__mark">أ</span><span class="logo__text">لوحة <strong>أثر</strong></span></a>
+        <div class="toolbar">
+          <button class="btn btn--ghost btn--sm" id="export-btn">⬇️ تصدير Excel</button>
+          <button class="btn btn--ghost btn--sm" id="refresh-btn">🔄 تحديث</button>
+          <button class="btn btn--sm" id="logout-btn">خروج</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-wide dash">
+      <section class="kpis" id="kpis"></section>
+
+      <section class="filters">
+        <input class="field" type="search" id="f-q" placeholder="بحث بالاسم، الجوال، رقم الطلب...">
+        <select class="field" id="f-status"><option value="">كل الحالات</option></select>
+        <select class="field" id="f-city"><option value="">كل المدن</option></select>
+      </section>
+
+      <section class="board">
+        <div class="list" id="list"></div>
+        <aside class="detail" id="detail">
+          <p class="muted center">اختر طلبًا من القائمة لعرض تفاصيله</p>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <template id="detail-tpl">
+    <div class="detail__head">
+      <div>
+        <h2 data-f="name"></h2>
+        <span class="muted" data-f="code"></span>
+      </div>
+      <button class="btn btn--sm detail__close" data-close>✕</button>
+    </div>
+    <div class="actions">
+      <a class="btn btn--sm btn--primary" data-f="call">📞 اتصال</a>
+      <a class="btn btn--sm btn--ghost" data-f="wa" target="_blank" rel="noopener">💬 واتساب</a>
+      <a class="btn btn--sm btn--ghost" data-f="map" target="_blank" rel="noopener">📍 الموقع</a>
+    </div>
+    <dl class="info">
+      <dt>الجوال</dt><dd data-f="phone" dir="ltr"></dd>
+      <dt>المدينة / الحي</dt><dd data-f="area"></dd>
+      <dt>العنوان</dt><dd data-f="address"></dd>
+      <dt>النوع</dt><dd data-f="types"></dd>
+      <dt>عدد القطع</dt><dd data-f="quantity"></dd>
+      <dt>الوصف</dt><dd data-f="details"></dd>
+      <dt>الوقت المفضل</dt><dd data-f="preferredTime"></dd>
+      <dt>تاريخ الطلب</dt><dd data-f="createdAt"></dd>
+    </dl>
+
+    <form class="form form--compact" data-form="update">
+      <h3>تحديث الطلب</h3>
+      <div class="form__row">
+        <label>الحالة<select name="status"></select></label>
+        <label>موعد الاستلام<input type="datetime-local" name="pickupDate"></label>
+      </div>
+      <label>المسؤول / السائق<input type="text" name="assignee" placeholder="اسم المسؤول عن الطلب"></label>
+      <label>رسالة إضافية للمتبرع (اختياري)<input type="text" name="message" placeholder="مثال: سيصلك السائق خالد بإذن الله"></label>
+      <label class="consent"><input type="checkbox" name="notify" checked> إشعار المتبرع بتغيير الحالة</label>
+      <label>ملاحظة داخلية (لا تظهر للمتبرع)<textarea name="note" rows="2"></textarea></label>
+      <p class="form__error" data-f="error"></p>
+      <button class="btn btn--primary btn--block">حفظ</button>
+      <div class="notice" data-f="notice" hidden></div>
+    </form>
+
+    <h3>سجل الحالة</h3>
+    <ol class="timeline" data-f="history"></ol>
+    <h3>الملاحظات الداخلية</h3>
+    <ul class="notes" data-f="notes"></ul>
+    <h3>الإشعارات المرسلة</h3>
+    <ul class="notes" data-f="notifications"></ul>
+  </template>
+
+  <script src="admin.js"></script>
+</body>
+</html>
